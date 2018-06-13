@@ -1,0 +1,41 @@
+package kerbinfiber.hydroponicsmod;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
+
+@Mod(modid = "hydrom", name = "Hydroponics Mod",  version = "1.0")
+public class HydroponicsMod {
+	
+	
+		public static Item itemTable;
+	
+	
+		@EventHandler
+		public void preInit(FMLPreInitializationEvent event)	// Item & Block Initialization and Registering | Configuration Handling
+		{
+			itemTable = new ItemTable().setUnlocalizedName("ItemTable")
+			GameRegistry.registerItem(itemTable, itemTable.getUnlocalizedName().substring(5));
+			
+		}
+		
+		@EventHandler
+		public void init(FMLInitializationEvent event)	// Proxy, TileEntity, Entity, GUI and Packet Registering
+		{
+			
+			
+			
+		}
+		
+		@EventHandler
+		public void postInit(FMLPostInitializationEvent event)
+		{
+			
+			
+			
+		}
+}

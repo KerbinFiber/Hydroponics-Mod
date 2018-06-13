@@ -1,0 +1,51 @@
+package kerbinfiber.hydroponicsmod;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+
+@Mod(modid = "hydromod", name = "Hydroponics Mod",  version = "1.0")
+public class HydroponicsMod {
+	
+	
+		public static Item itemTable;
+		public static Item itemSeeds;
+		public static Block blockTable;
+	
+		@EventHandler
+		public void preInit(FMLPreInitializationEvent event)	// Item & Block Initialization and Registering | Configuration Handling
+		{
+			itemTable = new ItemTable().setUnlocalizedName("ItemTable").setTextureName("hydromod:hydroponicstray");
+			itemSeeds = new ItemSeeds().setUnlocalizedName("ItemSeeds").setTextureName("hydromod:seedpack");
+			
+			blockTable = new BlockTable(Material.iron).setBlockName("BlockTable").setBlockTextureName("hydromod:hydroponicsblock");
+			
+			GameRegistry.registerItem(itemTable, itemTable.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(itemSeeds, itemSeeds.getUnlocalizedName().substring(5));
+			GameRegistry.registerBlock(blockTable, blockTable.getUnlocalizedName().substring(5));
+			System.out.println(blockTable.getUnlocalizedName().substring(5));
+			
+		}
+		
+		@EventHandler
+		public void init(FMLInitializationEvent event)	// Proxy, TileEntity, Entity, GUI and Packet Registering
+		{
+			
+			
+			
+		}
+		
+		@EventHandler
+		public void postInit(FMLPostInitializationEvent event)
+		{
+			
+			
+			
+		}
+}

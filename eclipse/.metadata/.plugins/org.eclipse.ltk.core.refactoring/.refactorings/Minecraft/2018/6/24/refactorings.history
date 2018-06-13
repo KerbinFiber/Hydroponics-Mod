@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Minecraft/src/main/java/kerbinfiber/hydroponicsmod/ItemBanana.java&apos; to &apos;Banana.java&apos;" description="Rename resource &apos;ItemBanana.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/kerbinfiber/hydroponicsmod/ItemBanana.java" name="Banana.java" stamp="1528825705420" updateReferences="true"/>
+</session>

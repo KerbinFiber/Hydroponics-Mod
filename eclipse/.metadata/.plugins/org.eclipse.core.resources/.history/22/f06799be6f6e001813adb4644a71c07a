@@ -1,0 +1,18 @@
+package kerbinfiber.hydroponicsmod;
+
+import net.minecraft.item.Item;
+
+public class ItemSeeds extends Item 
+{
+	public int potency = 5;
+	public int yeild = 1;
+	public int age = 0;
+	
+	public class BananaSeeds extends ItemSeeds
+	{
+		
+		
+		
+	}
+	
+}
