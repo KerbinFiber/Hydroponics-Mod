@@ -1,0 +1,73 @@
+package kerbinfiber.hydroponicsmod;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import kerbinfiber.hydroponicsmod.Banana;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemStack;
+
+@Mod(modid = "hydromod", name = "Hydroponics Mod",  version = "1.0")
+public class HydroponicsMod {
+	
+	
+		public static Item itemTable;
+		public static Item itemSeeds;
+		public static Item banana;
+		public static Item bluespaceBanana;
+		
+		public static Block blockTable;
+	
+		@EventHandler
+		public void preInit(FMLPreInitializationEvent event)	// Item & Block Initialization and Registering | Configuration Handling
+		{
+			//Items
+			itemTable = new ItemTable().setUnlocalizedName("ItemTable").setTextureName("hydromod:hydroponicstray");
+			itemSeeds = new ItemSeeds().setUnlocalizedName("ItemSeeds").setTextureName("hydromod:seedpack");
+			banana = new ItemFood(5, 0.5F, false).setHasSubtypes(true).setUnlocalizedName("Banana").setTextureName("hydromod:banana");
+			bluespaceBanana = new ItemFood(2, 0.2F, false).setUnlocalizedName("Bluespace Banana").setTextureName("hydromod:bluespacebanana");
+			
+			//Blocks
+			blockTable = new BlockTable(Material.iron).setBlockName("BlockTable").setBlockTextureName("hydromod:hydroponicsblock");
+			
+			//------------------------------
+			
+			//Items
+			GameRegistry.registerItem(itemTable, itemTable.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(itemSeeds, itemSeeds.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(banana, banana.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(bluespaceBanana, bluespaceBanana.getUnlocalizedName().substring(5));
+			
+			//Blocks
+			GameRegistry.registerBlock(blockTable, blockTable.getUnlocalizedName().substring(5));
+			System.out.println(blockTable.getUnlocalizedName().substring(5));
+			
+		}
+		
+		@EventHandler
+		public void init(FMLInitializationEvent event)	// Proxy, TileEntity, Entity, GUI and Packet Registering
+		{
+			//Item Recipes
+			GameRegistry.addRecipe(new ItemStack(itemTable), new Object[]{"ICI","III"," R ", 'I', Items.iron_ingot, 'C', Items.cauldron, 'R', Items.redstone});
+			
+			//Block Recipes
+			
+			
+		}
+		
+		@EventHandler
+		public void postInit(FMLPostInitializationEvent event)
+		{
+			
+			
+			
+		}
+}

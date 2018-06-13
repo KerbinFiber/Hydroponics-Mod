@@ -1,0 +1,9 @@
+item.HydroTray.name=Hydroponics Tray
+item.SeedPack.name=Seed Pack
+item.PlantDisk.name=Plant Data Disk
+item.Banana.name=Banana
+item.BluespaceBanana.name=Bluespace Banana
+
+tile.DnaScanner.name=DNA Scanner
+
+itemGroup.tabHydroponicsMod=Hydroponics Mod

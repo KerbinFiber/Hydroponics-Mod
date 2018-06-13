@@ -1,0 +1,7 @@
+item.ItemTable.name=Hydroponics Tray
+item.ItemSeeds.name=Seed Pack
+item.ItemBanana.name=Banana
+item.Banana.name=Banana
+item.ItemBanana.BluespaceBanana.name=Bluespace Banana
+
+tile.BlockTable.name=Hydroponics Tray

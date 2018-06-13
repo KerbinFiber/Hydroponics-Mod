@@ -1,0 +1,15 @@
+package kerbinfiber.hydroponicsmod;
+
+import net.minecraft.item.Item;
+
+public class Banana extends Item
+{
+	
+	public class BlueSpaceBanana extends Banana
+	{
+		
+		
+		
+	}
+	
+}
