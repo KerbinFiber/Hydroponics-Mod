@@ -1,0 +1,49 @@
+package kerbinfiber.hydroponicsmod;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemSeeds;
+
+public class SeedPacks extends ItemSeeds
+{
+	
+	public SeedPacks(Block HydroTray, Block p_i45352_2_) 
+	{
+		super(HydroTray, p_i45352_2_);
+	}
+
+	public int potency = 5;
+	public int yeild = 1;
+	public int age = 0;
+	
+	//Banana Seeds
+	
+	public class BananaSeeds extends SeedPacks
+	{
+		public void method() 
+		{
+			
+			
+			
+		}
+		
+		
+	}
+
+	public class BluespaceBananaSeeds extends SeedPacks
+	{
+		
+		
+		
+	}
+	
+	//Tomato Seeds
+	
+	public class TomatoSeeds extends SeedPacks
+	{
+		
+		
+		
+	}
+
+}

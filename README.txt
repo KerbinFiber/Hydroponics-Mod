@@ -1,4 +1,3 @@
-The Hydroponics Mod is a new take on farming and plants in Minecraft. (1.7.10)
 -------------------------------------------
 Source installation information for modders
 -------------------------------------------

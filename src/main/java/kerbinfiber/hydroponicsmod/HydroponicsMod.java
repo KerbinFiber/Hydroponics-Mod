@@ -31,7 +31,7 @@ public class HydroponicsMod {
 		
 		//Item Health
 		
-		public static final Item.ToolMaterial bottleCapacity = EnumHelper.addToolMaterial("bottleCapacity", 0, 5, 0.0F, 0.0F, 0);
+		//public static final Item.ToolMaterial bottleCapacity = EnumHelper.add -- Todo Later for Nutriment usage on hydro trays
 		
 		//Blocks
 		
